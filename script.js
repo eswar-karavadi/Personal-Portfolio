@@ -5,13 +5,26 @@ function changeTitle(){
     titleElement.style.color = "red";
 }
 
-let clickMeBtn = document.getElementById("Click");
+/* let clickMeBtn = document.getElementById("Click");
 
-clickMeBtn.addEventListener("click", changeTitle);
+clickMeBtn.addEventListener("click", changeTitle); */
 
 //function changeText(){
     //buttonElement.innerText = "hi";
 //}
+
+
+titleElement.onmouseover = function() {mouseOver()};
+titleElement.onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  titleElement.style.color = "red";
+}
+
+function mouseOut() {
+  titleElement.style.color = "black";
+}
+
 
 
 const nameInput = document.getElementById("nameInput");
