@@ -1,3 +1,30 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(SF-Pro.ttf);
+}
+
+body{
+    font-family: myFirstFont;
+    background-color: black;
+}
+.main{
+    display: flex;
+    height: 100%;
+    position: absolute;
+    border: 4px dashed white;
+    width: 100%;
+}
+.left{
+    background-color: lightblue;
+    flex: 1;
+
+}
+.right{
+    background-color: lightgreen;
+    width: 50%;
+    overflow: auto;
+
+}
 .header{
     background-color:lightblue;
     width: fill; 
@@ -9,12 +36,20 @@
 
 h1{
     font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: myFirstFont; 
+    text-align: center;
+}
+
+#title{
+    font-size: 50px;
+    font-family: myFirstFont; 
+    text-align: center;
 }
 
 p{
     font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    
 }
 
 .body{
@@ -28,3 +63,11 @@ p{
 input{
     color: black;
 }
+
+
+  
+h2 {
+    font-family: myFirstFont;
+    color: black;
+}
+
